@@ -1,109 +1,227 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="SocialMediaApp">
+<head>
+    <title></title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/css/sideNavbar.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/home.css" rel="stylesheet" />
+    <base href="/" />
+    <!--used for side nav bar-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+                    @*<div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a class="navbar-brand" href="#">MovieMe</a>
+                    </div>*@
+                    @*<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">*@
+                    <div class="col-sm-2">
+                        <img src="~/images/movieme.png" class="img-responsive logo" />
+                    </div>
+                    <div class="col-sm-8 textCenter">
+                        <input placeholder="Search by Actor, Title, Director" class="input" />
+                        <input placeholder="Search by Category" class="input" />
+                    </div>
+                    <div class="col-sm-2 socialIcons">
+                        <!--Social Icons-->
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                        <!--Twitter-->
+                        <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                        <!--Google +-->
+                        <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+                        <!--Linkedin-->
+                        <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+                        <!--Instagram-->
+                        <a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a>
+                        <!--Pinterest-->
+                        <a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a>
+                    </div>
+                    <div class="headerCenter">
+                        @*<ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>*@
+                        @*<form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <button type="submit" class="btn btn-default">
+                                Submit
+                            </button>
+                        </form>*@
+                        @*<ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>*@
+                    </div>
+                </nav>
+                <!--END Top NAVBAR-->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+                <div class="row">
+                <!--SIDE NAVBAR-->
+                    <div class="col-sm-2">
+                        <div class="nav-side-menu">
+                            @*<div class="brand">Brand Logo</div>*@
+                            <!--Avatar Image-->
+                            <div class="navImg img-responsive">
+                                <img src="~/images/avatar-will.png" class="img-responsive" />
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="btn btn-success navBtn">Message</button>
+                                <button class="btn btn-primary navBtn">Movies</button>
+                            </div>
+                            <hr/>
+                            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                            <!--MENU ITEM LIST-->
+                            <div class="menu-list">
+                                <ul id="menu-content" class="menu-content collapse out">
+                                    <li>
+                                        <a ui-sref="/home">
+                                            <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                        </a>
+                                    </li>
+                                    <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                        <a href="#"><i class="glyphicon glyphicon-lock"></i> Login <span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="products">
+                                        <li class="active"><a href="#">CSS3 Animation</a></li>
+                                        <!--place as many sub menu items here as you want-->
+                                        <li><a href="#">General</a></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                        <a href="#"><i class="glyphicon glyphicon-lock"></i> Register <span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="products">
+                                        <li class="active"><a href="#">CSS3 Animation</a></li>
+                                        <!--place as many sub menu items here as you want-->
+                                        <li><a href="#">General</a></li>
+                                    </ul>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-            <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+                                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                        <a href="#"><i class="glyphicon glyphicon-bullhorn"></i> Notifications <span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="service">
+                                        <!--place as many sub menu items here as you want-->
+                                        <li>Friend Requests</li>
+                                        <li>Recommendations</li>
+                                    </ul>
+
+                                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                                        <a href="#"><i class="glyphicon glyphicon-user"></i> Profile <span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="new">
+                                        <!--place as many sub menu items here as you want-->
+                                        <li>View Profile</li>
+                                        <li>Edit Profile</li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#movies" class="collapsed">
+                                        <a href="#"><i class="glyphicon glyphicon-user"></i> Movies <span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="movies">
+                                        <!--place as many sub menu items here as you want-->
+                                        <li>Action</li>
+                                        <li>Comedy</li>
+                                        <li>Horror</li>
+                                        <li>Kids</li>
+                                        <li>Romance</li>
+                                        <li>Thriller</li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#movies" class="collapsed">
+                                        <a href="#"><i class="glyphicon glyphicon-user"></i> TV Shows <span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="movies">
+                                        <!--place as many sub menu items here as you want-->
+                                        <li>Action</li>
+                                        <li>Comedy</li>
+                                        <li>Horror</li>
+                                        <li>Kids</li>
+                                        <li>Romance</li>
+                                        <li>Thriller</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END SIDE NAVBAR-->
+
+                    <!--VIEW-->
+                    <div class="col-sm-10 view-content">
+                        <ui-view></ui-view> <!--Angular states injected here!!!!!!-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699562">Add an appsetting in config and access it in app.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run & Deploy</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
+
+
+    <!--Package Scripts-->
+    @*packages load in order. place jquery first typically*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--Program Scripts-->
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/Controllers/homeController.js"></script>
+    <script src="~/ngApp/Controllers/modalController.js"></script>
+    <script src="~/ngApp/Services/services.js"></script>
+</body>
+</html>

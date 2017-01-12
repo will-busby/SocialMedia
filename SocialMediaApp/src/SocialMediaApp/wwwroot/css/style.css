@@ -1,0 +1,21 @@
+﻿.logo{
+    margin: auto;
+}
+.textCenter{
+    text-align: center;
+}
+.socialIcons{
+    text-align: center;
+    margin-top: 17px;
+}
+.input{
+    width: 400px;
+    max-width: 45%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,33 @@
+﻿<!--Can implement the top navbar per view page if desired-->
+<!--<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="col-sm-2 textCenter">
+            <img src="../../images/movieme.png" class="img-responsive" />
+        </div>
+        <div class="col-sm-8 textCenter">
+            <input placeholder="Search by Actor, Title, Director" class="input" />
+            <input placeholder="Search by Category" class="input" />
+        </div>
+        <div class="col-sm-2 socialIcons">
+            <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+            <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+            <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+            <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+            <a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a>
+            <a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a>
+        </div>
+</nav>-->
+
+<div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-2" ng-repeat="movie in controller.movies.results">
+        <div class="movieBox">
+            <div>
+                <img alt="Bootstrap Thumbnail First" ng-click="controller.ModalService.openModal('detailsMovieModal.html', movie.id)" ng-src="{{movie.poster_120x171}}" />
+            </div>
+            <div class="movieBoxIcons">
+                <div class="glyphicon glyphicon-thumbs-up"></div>
+                <div class="glyphicon glyphicon-share-alt"></div>
+                <div class="glyphicon glyphicon-comment"></div>
+            </div>
+        </div>
+    </div>
+</div>

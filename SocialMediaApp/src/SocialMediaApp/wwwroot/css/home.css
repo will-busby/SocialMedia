@@ -1,0 +1,20 @@
+﻿.movieBox{
+    width: 141px;
+    background-color: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
+.movieBox:hover{
+    background-color: #1f1d1d;
+}
+.movieBoxIcons{
+    color: #7d7d7d;
+    padding: 5px;
+    margin-right: 15px;
+    text-align: center;
+}
+.movieBoxIcons:hover{
+    color: #fff;
+}

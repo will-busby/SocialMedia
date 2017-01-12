@@ -1,0 +1,26 @@
+﻿<!--HEAD-->
+<div class="modal-header">
+
+</div>
+
+
+<!--BODY-->
+<div class="modal-body">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <!--<img alt="Bootstrap Thumbnail First" ng-src="{{modal.movie.poster_120x171}}" />-->
+        <div ng-repeat="trailer in modal.movie.trailers">
+            <video width="320" height="240" controls>
+                <source src="{{trailer.web[0].embed}}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <p><strong>Title: </strong>{{modal.movie.title}}</p>
+        <p ng-repeat="director in modal.movie.directors">Director: {{director.name}}</p>
+        <p><strong>Cast: </strong><span ng-repeat="actor in modal.movie.cast | limitTo: 5">{{actor.name}}, </span></p>
+        <p><strong>Release Year: </strong>{{modal.movie.release_year}}</p>
+        <p><strong>Genres: </strong><span ng-repeat="genre in modal.movie.genres | limitTo: 3">{{genre.title}}, </span></p>
+        <p><strong>Tags: </strong><span ng-repeat="tag in modal.movie.tags | limitTo: 5">{{tag.tag}} | </span></p>
+    </div>
+</div>
+
